@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="icon" type="image/jpeg" href="C:\Users\JAHNAVI\Downloads\WhatsApp Image 2025-11-18 at 19.41.00_1d6735f2.jpg">
+<title>WaterWise | Save Water</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: linear-gradient(to bottom, #cceeff, #e6f7ff);
+}
+nav {
+background: #ffffff90;
+padding: 15px;
+text-align: center;
+font-weight: bold;
+backdrop-filter: blur(5px);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #005b96;
+}
+.hero{
+background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29');
+background-size: cover;
+background-position: center;
+height: 350px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+padding: 20px;
+}
+.hero h1 {
+font-size: 38px;
+animation: fadeIn 2s ease;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.card {
+max-width: 700px;
+margin: 35px auto;
+padding: 25px;
+background: #ffffffd9;
+border-radius: 12px;
+box-shadow: 0 5px 15px #00000030;
+text-align: center;
+}
+.card h2 {
+color: #0277bd;
+}
+.btn {
+background: #0288d1;
+color: white;
+padding: 10px 20px;
+border-radius: 8px;
+border: none;
+font-size: 16px;
+cursor: pointer;
+margin-top: 15px;
+}
+.btn:hover {
+background: #01579b;
+}
+#fact {
+margin-top: 15px;
+font-weight: bold;
+color: #004d6d;
+}
+.info-container {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 25px;
+flex-wrap: wrap;
+}
+.info-box {
+width: 200px;
+background: white;
+padding: 15px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 4px 10px #00000025;
+}
+.menu-icon {
+font-size: 32px;
+cursor: pointer;
+color: #005b96;
+padding-right: 10px;
+}
+.menu {
+list-style: none;
+padding: 0;
+margin: 0;
+background: white;
+width: 100%;
+text-align: center;
+display: none;
+}
+.menu li {
+padding: 12px;
+border-bottom: 1px solid #eee;
+}
+.menu li a {
+text-decoration: none;
+color: #005b96;
+font-weight: bold;
+}
+.menu li:hover {
+background: #e6f7ff;
+}
+.menu.show {
+display: block;
+}
+</style>
+</head>
+<body>
+<nav>
+<img src="C:\Users\JAHNAVI\Downloads\WhatsApp Image 2025-11-18 at 19.40.59_0667858e.jpg" height="80" width="100">
+<div>
+<ul id="menu" class="menu">
+<li><a href="k.html">Home</a></li>
+<li><a href="a.html">About</a></li>
+<li><a href="n.html">Challenges</a></li>
+<li><a href="y.html">Donation</a></li>
+<li><a href="x.html">Tips</a></li>
+</ul>
+</div>
+<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+</nav>
+<section class="hero">
+<h1>Thousands have lived without love, not one without water. </h1>
+</section>
+<div class="card">
+<h2>Why Water Matters?</h2>
+<p>Water is essential for life. Conserving water today protects the future of our planet.Water is essential because it supports life by enabling vital biological processes, maintaining body temperature, and transporting nutrients. It helps remove waste, protects organs, and keeps cells functioning properly. Water also sustains ecosystems, supports agriculture, and is necessary for hygiene, making it crucial for both humans and the environment.</p>
+<h2>Why it is important to save water?</h2>
+<p>Saving water is important because it preserves a limited resource essential for life, agriculture, and sanitation. Conserving water reduces shortages, protects ecosystems, and ensures future availability. It also saves energy used in water treatment and distribution. Responsible use helps maintain environmental balance and supports sustainable development for future generations.</p>
+<button class="btn" onclick="showFact()">Show Water Fact</button>
+<p id="fact"></p>
+<div class="info-container">
+<div class="info-box">
+<h3> Limited</h3>
+<p>Only 1% of water is drinkable.</p>
+</div>
+<div class="info-box">
+<h3>Planet</h3>
+<p>Conservation protects nature.</p>
+</div>
+<div class="info-box">
+<h3>Home</h3>
+<p>Fixing leaks saves 5000L.</p>
+</div>
+</div>
+</div>
+<script>
+function showFact() {
+let facts = [
+" A dripping tap wastes up to 5000 liters yearly!",
+" A 5-minute shower uses 45 liters.",
+" Collecting rainwater reduces usage by 30%.",
+" 1 in 3 people lack safe drinking water.",
+" By 2025, nearly 2 billion people may face water scarcity.",
+" Using a bucket instead of a shower can save up to 50–70 liters per bath.",
+" A human can survive weeks without food, but only 3–4 days without water."
+];
+let pick = facts[Math.floor(Math.random()*facts.length)];
+document.getElementById("fact").innerHTML = pick;
+}
+function toggleMenu() {
+document.getElementById("menu").classList.toggle("show");
+}
+var now = new Date();
+document.write("Current_Date_and_Time: " + now);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="icon" type="image/jpeg" href="C:\Users\JAHNAVI\Downloads\WhatsApp Image 2025-11-18 at 19.41.00_1d6735f2.jpg">
+<title>WaterWise | Donate</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: linear-gradient(to bottom, #d9f1ff, #f1fbff);
+}
+
+/* Navigation */
+nav {
+background: #ffffffaa;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+backdrop-filter: blur(5px);
+}
+.menu-icon {
+font-size: 32px;
+cursor: pointer;
+color: #005b96;
+}
+.menu {
+list-style: none;
+padding: 0;
+margin: 0;
+background: white;
+width: 100%;
+text-align: center;
+display: none;
+}
+.menu li {
+padding: 12px;
+border-bottom: 1px solid #eee;
+}
+.menu li a {
+text-decoration: none;
+color: #005b96;
+font-weight: bold;
+}
+.menu li:hover {
+background: #e6f7ff;
+}
+.menu.show {
+display: block;
+}
+
+.header {
+text-align: center;
+padding: 30px;
+color: #014f86;
+font-size: 35px;
+font-weight: bold;
+}
+
+/* Donation card */
+.card {
+max-width: 450px;
+background: #ffffffdd;
+margin: 20px auto;
+padding: 25px;
+border-radius: 15px;
+box-shadow: 0 5px 15px #00000030;
+}
+.card h2 {
+color: #0277bd;
+text-align: center;
+}
+input, textarea {
+width: 100%;
+padding: 10px;
+margin: 8px 0;
+border-radius: 8px;
+border: 1px solid #bbb;
+}
+button {
+width: 100%;
+background: #0288d1;
+color: white;
+padding: 12px;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+cursor: pointer;
+margin-top: 10px;
+}
+button:hover {
+background: #01579b;
+}
+
+/* Awareness articles */
+.section {
+max-width: 900px;
+margin: 30px auto;
+background: #ffffffdd;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 5px 15px #00000030;
+}
+.section h2 {
+color: #0277bd;
+}
+ul li {
+margin: 10px 0;
+}
+.youtube-box {
+margin-top: 20px;
+}
+.youtube-box a {
+color: #005b96;
+font-weight: bold;
+text-decoration: none;
+}
+
+/* ------------------------------- */
+/* ✔ FIXED POPUP CENTER + ANIMATION */
+/* ------------------------------- */
+
+.popup {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #00000060;
+backdrop-filter: blur(6px);
+justify-content: center;
+align-items: center;
+animation: fadeIn 0.3s ease;
+}
+
+.popup-box {
+background: white;
+padding: 25px;
+width: 300px;
+border-radius: 12px;
+text-align: center;
+box-shadow: 0 5px 15px #00000030;
+animation: slideDown 0.35s ease;
+}
+
+.popup-box h3 {
+color: #0277bd;
+}
+
+.close-btn {
+margin-top: 10px;
+background: #0288d1;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+
+/* ✔ Smooth animations */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@keyframes slideDown {
+0% { opacity: 0; transform: translateY(-20px); }
+100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<img src="C:\Users\JAHNAVI\Downloads\WhatsApp Image 2025-11-18 at 19.40.59_0667858e.jpg" height="80" width="100">
+<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+</nav>
+
+<ul id="menu" class="menu">
+<li><a href="k.html">Home</a></li>
+<li><a href="a.html">About</a></li>
+<li><a href="n.html">Challenges</a></li>
+<li><a href="y.html">Donate</a></li>
+<li><a href="x.html">Tips</a></li>
+</ul>
+
+<div class="header">Support Water Access for Every Community</div>
+
+<div class="card">
+<h2>Make a Donation</h2>
+<p style="text-align:center; color:#004b6a;">Your contribution helps bring clean water to villages and towns suffering from shortages.</p>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email Address">
+<input type="number" placeholder="Donation Amount (₹)">
+<textarea placeholder="Message (optional)" rows="4"></textarea>
+
+<button onclick="showPopup()">Donate Now</button>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+<div class="popup-box">
+<h3>Thank You!</h3>
+<p>Your donation has been recorded successfully.</p>
+<button class="close-btn" onclick="hidePopup()">OK</button>
+</div>
+</div>
+
+<div class="section">
+<h2>Articles for Awareness and Strategy</h2>
+<ul>
+<li><b>Global Water Crisis (UN, 2024):</b> 2.2 billion people lack safe drinking water.</li>
+<li><b>Smart Water Tech (IDRICA, 2024):</b> Digital solutions, recycling, sustainable agriculture.</li>
+<li><b>National Water Awards (2025):</b> India's leading conservation success stories.</li>
+<li><b>Local Governance Success:</b> Nellore & Sector V achieved < 3% wastage.</li>
+<li><b>Community Initiatives:</b> Women-led water restoration & school programs.</li>
+</ul>
+
+<div class="youtube-box">
+<h3>Watch These Videos</h3>
+<p><a href="https://youtu.be/IPU0S4XQGaU?si=dB9TpF6iNGq6J1Bd" target="_blank">Global Water Crisis Explained</a></p>
+<p><a href="https://youtu.be/jmnvPLZwq2c?si=dd3SIjspSzm1mdob" target="_blank">Water Scarcity in India – Solutions</a></p>
+</div>
+</div>
+
+<script>
+function toggleMenu() {
+document.getElementById("menu").classList.toggle("show");
+}
+
+function showPopup() {
+document.getElementById("popup").style.display = "flex";
+}
+
+function hidePopup() {
+document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>

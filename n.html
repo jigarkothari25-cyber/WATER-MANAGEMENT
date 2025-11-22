@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html >
+<head><link rel="icon" type="image/jpeg" href="C:\Users\JAHNAVI\Downloads\WhatsApp Image 2025-11-18 at 19.41.00_1d6735f2.jpg">
+
+<title>WaterWise | Challenges</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cceeff, #e6f7ff);
+}
+
+/* NAVBAR */
+nav {
+    background: #ffffffaa;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #005b96;
+    font-weight: bold;
+}
+
+/* HAMBURGER MENU */
+.menu-icon {
+    font-size: 32px;
+    cursor: pointer;
+    color: #005b96;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.menu li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #005b96;
+    font-weight: bold;
+}
+
+/* FIXED */
+.menu.show {
+    display: block;
+}
+
+/* PAGE TITLE */
+.title {
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    color: #014f86;
+    font-weight: bold;
+}
+
+/* CARD LAYOUT */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    width: 320px;
+    background: #ffffffdd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000030;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h2 {
+    text-align: center;
+    color: #0277bd;
+}
+
+/* PROGRESS BAR */
+.progress-box {
+    width: 100%;
+    height: 12px;
+    background: #bbdefb;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 12px;
+    width: 0%;
+    background: #0288d1;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+/* TASKS */
+.task-list {
+    margin-top: 15px;
+}
+
+.task-list label {
+    display: block;
+    padding: 6px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+   <img src="C:\Users\JAHNAVI\Downloads\WhatsApp Image 2025-11-18 at 19.40.59_0667858e.jpg" height="80" width="100">
+
+   <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+</nav>
+
+<!-- FIXED DROPDOWN MENU -->
+<ul id="menu" class="menu">
+<li><a href="k.html">Home</a></li>
+<li><a href="a.html">About</a></li>
+<li><a href="n.html">Challenges</a></li>
+<li><a href="y.html">Donate</a></li>
+<li><a href="x.html">Tips</a></li>
+</ul>
+
+<!-- PAGE TITLE -->
+<div class="title">Water Saving Challenges</div>
+
+<!-- CHALLENGE CARDS -->
+<div class="container">
+
+    <!-- BEGINNER -->
+    <div class="card">
+        <h2>Beginner Challenge (7 Days)</h2>
+
+        <div class="progress-box">
+            <div class="progress" id="progress1"></div>
+        </div>
+
+        <div class="task-list" id="list1">
+            <label><input type="checkbox" class="c1"> Use bucket instead of shower</label>
+            <label><input type="checkbox" class="c1"> Turn off tap while brushing</label>
+            <label><input type="checkbox" class="c1"> Reuse leftover water for plants</label>
+            <label><input type="checkbox" class="c1"> Avoid water wastage while handwashing</label>
+            <label><input type="checkbox" class="c1"> Check for leaking taps</label>
+            <label><input type="checkbox" class="c1"> Finish tasks within 7 minutes of water use</label>
+            <label><input type="checkbox" class="c1"> Drink only clean filtered water</label>
+        </div>
+    </div>
+
+    <!-- PRO -->
+    <div class="card">
+        <h2>Pro Challenge (15 Days)</h2>
+
+        <div class="progress-box">
+            <div class="progress" id="progress2"></div>
+        </div>
+
+        <div class="task-list" id="list2">
+            <label><input type="checkbox" class="c2"> Take 3-minute quick bath</label>
+            <label><input type="checkbox" class="c2"> Collect rainwater for plants</label>
+            <label><input type="checkbox" class="c2"> Wash clothes with minimal water</label>
+            <label><input type="checkbox" class="c2"> Store RO waste water for cleaning</label>
+            <label><input type="checkbox" class="c2"> No car wash using running pipe</label>
+            <label><input type="checkbox" class="c2"> Reduce water used in cooking</label>
+            <label><input type="checkbox" class="c2"> Use cloth instead of tap for cleaning</label>
+            <label><input type="checkbox" class="c2"> Avoid unnecessary flushing</label>
+            <label><input type="checkbox" class="c2"> Teach someone water saving</label>
+            <label><input type="checkbox" class="c2"> Track your daily water use</label>
+            <label><input type="checkbox" class="c2"> Fix minor leaks</label>
+            <label><input type="checkbox" class="c2"> Use drip method for plants</label>
+            <label><input type="checkbox" class="c2"> Avoid heater running water waste</label>
+            <label><input type="checkbox" class="c2"> Use bucket for utensils</label>
+            <label><input type="checkbox" class="c2"> Finish all 15 tasks</label>
+        </div>
+    </div>
+
+    <!-- ADVANCED -->
+    <div class="card">
+        <h2>Advanced Challenge (30 Days)</h2>
+
+        <div class="progress-box">
+            <div class="progress" id="progress3"></div>
+        </div>
+
+        <div class="task-list" id="list3">
+            <label><input type="checkbox" class="c3"> Use bucket bathing only</label>
+            <label><input type="checkbox" class="c3"> Practice greywater reuse</label>
+            <label><input type="checkbox" class="c3"> Install low-flow taps</label>
+            <label><input type="checkbox" class="c3"> Implement rainwater harvesting</label>
+            <label><input type="checkbox" class="c3"> Use drip irrigation</label>
+            <label><input type="checkbox" class="c3"> Fix leaks every week</label>
+            <label><input type="checkbox" class="c3"> Reduce cooking water waste</label>
+            <label><input type="checkbox" class="c3"> Reuse RO water daily</label>
+            <label><input type="checkbox" class="c3"> Zero drinking water waste</label>
+            <label><input type="checkbox" class="c3"> Track usage weekly</label>
+            <label><input type="checkbox" class="c3"> No outdoor water wastage</label>
+            <label><input type="checkbox" class="c3"> Complete 30-day routine</label>
+        </div>
+    </div>
+
+</div>
+
+<!-- JAVASCRIPT FOR PROGRESS + MENU -->
+<script>
+function updateProgress(className, progressBarId) {
+    let boxes = document.querySelectorAll("." + className);
+    let checked = 0;
+
+    boxes.forEach(b => {
+        if (b.checked) checked++;
+        b.onchange = () => updateProgress(className, progressBarId);
+    });
+
+    let percent = (checked / boxes.length) * 100;
+    document.getElementById(progressBarId).style.width = percent + "%";
+}
+
+updateProgress("c1", "progress1");
+updateProgress("c2", "progress2");
+updateProgress("c3", "progress3");
+
+/* HAMBURGER MENU SCRIPT */
+function toggleMenu() {
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
